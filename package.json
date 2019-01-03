@@ -1,0 +1,26 @@
+{
+  "name": "npm-modules",
+  "version": "1.0.0",
+  "description": "NPM-modules",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel app.js -d dist --source-maps && babel src -d dist/src --source-maps",
+    "start": "npm run build && nodemon dist/app.js",
+    "test": "echo 'Not implemented'"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "commander": "^2.19.0",
+    "csvjson": "^5.1.0",
+    "nodemon": "^1.18.7",
+    "readline": "^1.3.0"
+  },
+  "dependencies": {}
+}
