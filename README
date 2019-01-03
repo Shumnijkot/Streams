@@ -1,0 +1,8 @@
+The tool should be executed from the utils folder.
+Example: node streams.js --action=cssBundler --path=../css
+
+For the sake of comfort, i've created two folders with files to test: 'data' and 'css'
+In data there are some csv files
+In css - css files to bundle them.
+
+For more info, call: node streams.js -h

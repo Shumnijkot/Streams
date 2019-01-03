@@ -38,13 +38,18 @@ program
     });
 
 program.on('--help',(actionName, fileName)=>{
-    console.log('-a, --action <actionName>', 'Action to call:');
-    console.log('\\t', 'reverse. Reverses a string');
-    console.log('\\t', 'transform. Transforms a string to Uppercase');
-    console.log('\\t', 'outputFile Outputs contents of the file');
-    console.log('\\t', 'convertFromFile Converts content of the file to json.');
-    console.log('\\t', 'convertToFile Converts the file to json and wrights the result to the file with same name and json extension');
-    console.log('\\t', 'cssBundler bundles css form path');
+    console.log('-a, --action <actionName>');
+    console.log('Actions to call:');
+    console.log('\t', 'reverse. Reverses a string');
+    console.log('\t', 'transform. Transforms a string to Uppercase');
+    console.log('\t', 'outputFile. Outputs contents of the file from --file argument');
+    console.log('\t', 'convertFromFile. Converts content of the file from --file argument to json.');
+    console.log('\t', 'convertToFile. Converts the file from --file argument to json and wrights the result to the file with same name and json extension.');
+    console.log('\t', 'cssBundler. Bundles css form --path argument.');
+    console.log('Arguments to pass:');
+    console.log('\t', '-f, --file <fileName>', 'File to work with');
+    console.log('\t', '-p, --path <pathName>', 'Path to work with');
+
 });
 
 program.parse(process.argv);
